@@ -30,5 +30,6 @@ exports[`Take a snapshot should take snpashot 1`] = `
     Down
   </button>
    
+  <div />
 </DocumentFragment>
 `;

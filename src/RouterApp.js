@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Counter from "./Components/Counter";
 import CounterDec from "./Components/CounterDec";
-import GetData from "./Components/GetData";
+import {GetData} from "./Components/GetData";
 import { Link } from "react-router-dom";
 
 const About = () => <CounterDec />

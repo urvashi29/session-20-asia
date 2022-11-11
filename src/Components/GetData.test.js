@@ -1,25 +1,24 @@
-// import axios from 'axios';
-// import { fetchUsers } from './utils';
+import { GetData } from './GetData';
+import { fireEvent, getByTestId, render, screen, waitFor } from '@testing-library/react';
 
-// jest.mock('axios');
+describe('expectedData', () => {
+    it('checks if returned data from API rendered into component', async () => {
+        render(<GetData />);
 
-// describe('fetchUsers', () => {
-//     describe('when api is success', () => {
-//         it('should return users list', async () => {
-//             const users = [{
-//                 id: 1, name: 'alina'
-//             }
-//             ]
+        await waitFor(() => {
+            expect(screen.getByText("Sydnee")).toBeInTheDocument();
+        });
+    });
+});
 
-//             axios.get.mockResolvedValueOnce(users);
+// describe('', () => {
+//     it('', async () => {
+//         render(<GetData />)
 
-//             const result = await fetchUsers;
+//         fireEvent().click(screen.getByTestId('button-up'));
 
-//             expect(axios.get).toHaveBeenCalledWith('https://jsonplaceholder.typicode.com/users');
-//             expect(result).toEqual(users);
-
+//         await waitFor(() => {
+//             expect((screen.getByText("Sydnee")).toBeInTheDocument())
 //         })
 //     })
 // })
-
-
