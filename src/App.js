@@ -21,3 +21,13 @@ export default App;
 //test events
 //async api
 
+
+
+// free apis
+
+// quotas (key)
+// private key (google traffic api, google api )
+
+// private (public key) | rapid Api
+
+
